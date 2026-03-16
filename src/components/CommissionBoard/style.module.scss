@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 1000px;
+  padding: 10px;
+  border: black 1px solid;
+  border-radius: 10px;
+}
+
+.column {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  row-gap: 10px;
+  flex-direction: column;
+  background-color: lightgray;
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: move;
+
+  .text {
+
+  }
+}

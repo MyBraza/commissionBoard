@@ -1,0 +1,38 @@
+{
+  "name": "commissionboard",
+  "version": "1.0.0",
+  "description": "A board that displays the status of current commissions and allows communication between an artist and a client",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyBraza/commissionBoard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MyBraza/commissionBoard/issues"
+  },
+  "homepage": "https://github.com/MyBraza/commissionBoard#readme",
+  "dependencies": {
+    "immer": "1.7.3",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-scripts": "latest",
+    "use-immer": "0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "25.2.0",
+    "@types/react": "19.2.10",
+    "plop": "^4.0.5",
+    "sass": "^1.98.0",
+    "typescript": "5.9.3"
+  }
+}

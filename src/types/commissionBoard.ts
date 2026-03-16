@@ -1,0 +1,1 @@
+export type TStatus = 'pending' | 'accepted' | 'inProgress' | 'forReview' | 'done'
