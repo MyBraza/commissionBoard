@@ -1,0 +1,33 @@
+@use '../../styles/colors';
+@use '../../styles/variables';
+
+.container {
+  background-color: colors.$bg-secondary;
+  padding: variables.$padding-desktop;
+  border-radius: variables.$border-radius-desktop;
+}
+
+.title {
+  font-size: 24pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: variables.$padding-desktop;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: variables.$padding-desktop-small;
+  background-color: colors.$bg-main;
+  padding: variables.$padding-desktop;
+  border-radius: variables.$border-radius-desktop;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  row-gap: variables.$padding-desktop-small;
+  padding: variables.$padding-desktop-small;
+  border: 1px solid colors.$border-color;
+  border-radius: variables.$border-radius-desktop;
+}

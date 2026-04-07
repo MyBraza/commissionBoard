@@ -3,26 +3,15 @@ import {TCard} from "@customTypes/commissionBoard";
 import Link from "next/link";
 import {getUser} from "@constants";
 
-type TCommissionBoardCardProps = { card: TCard, }
+type TCommissionBoardCardStaticProps = { card: TCard, }
 
-export default function CommissionBoardCard({card}: TCommissionBoardCardProps) {
+export default function CommissionBoardCard({card}: TCommissionBoardCardStaticProps) {
     const {id, name, status, artist: artistID, client: clientID} = card
     const client = getUser(clientID)?.name
     const artist = getUser(artistID)?.name
 
-    function onDragStart(evt) {
-        let element = evt.currentTarget;
-        element.classList.add(css.dragged);
-        evt.dataTransfer.setData("text/plain", `${id}`);
-        evt.dataTransfer.effectAllowed = "move";
-    }
-
-    function onDragEnd(evt) {
-        evt.currentTarget.classList.remove(css.dragged);
-    }
-
     return <Link href={`/ticket/${id}`}>
-        <div draggable={true} onDragStart={onDragStart} onDragEnd={onDragEnd} className={css.card}>
+        <div className={css.card}>
             <div className={css.text}>{name}</div>
             <div>client: {client}</div>
             <div>artist: {artist}</div>

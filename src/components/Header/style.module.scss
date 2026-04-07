@@ -1,0 +1,18 @@
+@use '../../styles/colors';
+@use '../../styles/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  padding: variables.$padding-desktop-small variables.$padding-desktop-large;
+  box-sizing: border-box;
+  background-color: colors.$bg-accent;
+}
+
+.image {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}

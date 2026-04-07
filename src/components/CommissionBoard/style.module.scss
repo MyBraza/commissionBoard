@@ -1,33 +1,23 @@
+@use "../../styles/colors";
+@use '../../styles/variables';
+
 .container {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  min-height: 1000px;
-  padding: 10px;
-  border: black 1px solid;
-  border-radius: 10px;
+  padding: variables.$padding-desktop;
+  border-radius: variables.$border-radius-desktop;
+  background-color: colors.$bg-secondary;
+  border: 1px solid colors.$border-color;
+  margin-bottom: variables.$margin-block-desktop;
 }
 
-.column {
+.title {
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: variables.$padding-desktop;
+}
+
+.grid {
   display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
-  row-gap: 10px;
-  flex-direction: column;
-  background-color: lightgray;
-  width: auto;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.card {
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: move;
-
-  .text {
-
-  }
+  column-gap: variables.$padding-desktop-small;
+  min-height: 600px;
 }

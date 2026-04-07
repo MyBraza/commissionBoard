@@ -1,0 +1,29 @@
+:root {
+  --bg-main: #fff;
+  --bg-secondary: #ededed;
+  --bg-accent: #698ad7;
+
+  --border-color: #dcdcdc;
+
+  --txt-dark: #000;
+  --txt-light: #fff;
+
+  --button-main: #bda5e3;
+  --button-hover: #aa94ce;
+  --button-secondary: #f1ebe8;
+  --button-secondary-hover: #c0cebb;
+}
+
+$bg-main: var(--bg-main);
+$bg-secondary: var(--bg-secondary);
+$bg-accent: var(--bg-accent);
+
+$border-color: var(--border-color);
+
+$txt-dark: var(--txt-dark);
+$txt-light: var(--txt-light);
+
+$button-main: var(--button-main);
+$button-hover: var(--button-hover);
+$button-secondary: var(--button-secondary);
+$button-secondary-hover: var(--button-secondary-hover);

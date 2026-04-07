@@ -1,0 +1,14 @@
+@use "../../styles/colors";
+
+.column {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  row-gap: 10px;
+  flex-direction: column;
+  background-color: colors.$bg-main;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid colors.$border-color;
+}

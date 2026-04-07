@@ -1,18 +1,13 @@
-@use '../../styles/colors';
 @use '../../styles/variables';
 
-.card {
+.container {
   display: flex;
   flex-direction: column;
   row-gap: variables.$padding-desktop-small;
-  border: 1px solid colors.$border-color;
-  padding: 10px;
-  border-radius: 10px;
+  margin-bottom: variables.$margin-block-desktop;
 
-  .text {
+  h1 {
+    font-size: 18pt;
     font-weight: bold;
-  }
-
-  &.dragged {
   }
 }

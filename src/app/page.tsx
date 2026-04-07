@@ -1,5 +1,7 @@
-import CommissionBoard from "@components/CommissionBoard/CommissionBoard";
+import {ArtistList} from "@components/ArtistList";
+import {getArtistList} from "@constants";
 
 export default function Page() {
-    return <div><CommissionBoard/></div>
+    const artists = getArtistList()
+    return <div><ArtistList artists={artists}/></div>
 }

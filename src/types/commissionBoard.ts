@@ -1,1 +1,9 @@
-export type TStatus = 'pending' | 'accepted' | 'inProgress' | 'forReview' | 'done'
+import {TStatus} from "@customTypes/tickets";
+
+export type TCard = {
+    id: number
+    status: TStatus
+    name: string
+    client: number
+    artist: number
+}

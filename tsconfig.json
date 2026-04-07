@@ -21,14 +21,20 @@
       "@components/*": [
         "src/components/*"
       ],
-      "@pages/*": [
-        "src/pages/*"
-      ],
       "@app/*": [
         "src/app/*"
       ],
-      "@types/*": [
+      "@customTypes/*": [
         "src/types/*"
+      ],
+      "@images/*": [
+        "public/images/*"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@styles/*": [
+        "src/styles/*"
       ]
     },
     "plugins": [
